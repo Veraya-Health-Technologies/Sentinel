@@ -1,0 +1,123 @@
+<svg viewBox="0 0 520 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main logo container with subtle background -->
+  <rect x="10" y="15" width="500" height="110" rx="12" fill="rgba(20, 184, 166, 0.02)" stroke="rgba(15, 118, 110, 0.1)" stroke-width="1"/>
+  
+  <!-- Enhanced surveillance icon -->
+  <g transform="translate(60, 70)">
+    <!-- Outer pulse ring -->
+    <circle cx="0" cy="0" r="32" fill="rgba(20, 184, 166, 0.4)" opacity="0.6">
+      <animate attributeName="r" values="28;35;28" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Surveillance rings with improved spacing -->
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#0d9488" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="21" fill="none" stroke="#0d9488" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#14b8a6" stroke-width="2.5" opacity="0.8"/>
+    
+    <!-- Enhanced central eye with depth -->
+    <circle cx="0" cy="0" r="8" fill="#0d9488"/>
+    <circle cx="0" cy="0" r="5" fill="white" opacity="0.9"/>
+    <circle cx="1" cy="-1" r="2" fill="#14b8a6"/>
+    
+    <!-- Dynamic scanning beam with improved animation -->
+    <path d="M 0,0 L 24,-10 A 26,26 0 0,1 24,10 Z" fill="#14b8a6" opacity="0.5" filter="url(#glow)">
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        from="0 0 0"
+        to="360 0 0"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Enhanced data points with animation -->
+    <g opacity="0.8">
+      <circle cx="18" cy="-15" r="2.5" fill="#14b8a6">
+        <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite" begin="0s"/>
+      </circle>
+      <circle cx="-22" cy="10" r="2.5" fill="#14b8a6">
+        <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+      <circle cx="15" cy="20" r="2.5" fill="#14b8a6">
+        <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      <circle cx="-12" cy="-24" r="2.5" fill="#14b8a6">
+        <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+      </circle>
+    </g>
+    
+    <!-- Connection lines to data points -->
+    <g stroke="#14b8a6" stroke-width="0.8" opacity="0.4">
+      <line x1="0" y1="0" x2="18" y2="-15"/>
+      <line x1="0" y1="0" x2="-22" y2="10"/>
+      <line x1="0" y1="0" x2="15" y2="20"/>
+      <line x1="0" y1="0" x2="-12" y2="-24"/>
+    </g>
+  </g>
+  
+  <!-- Enhanced company name with better typography -->
+  <text x="140" y="60" font-family="'Segoe UI', Arial, sans-serif" font-size="36" font-weight="700" fill="#0d9488">
+    SENTINEL
+  </text>
+  
+  <!-- Improved tagline with better hierarchy -->
+  <text x="140" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="500" fill="#0f766e" letter-spacing="1.2px">
+    ADVANCED ONE-HEALTH AMR SURVEILLANCE FOR ALL
+  </text>
+  
+  <!-- Enhanced decorative elements -->
+  <rect x="140" y="90" width="80" height="3" fill="#14b8a6" rx="1.5">
+    <animate attributeName="width" values="60;90;60" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Improved molecular structures with One-Health themes -->
+  <g transform="translate(420, 45)" opacity="0.4">
+    <!-- Human health symbol -->
+    <circle cx="0" cy="0" r="4" fill="none" stroke="#14b8a6" stroke-width="1.5"/>
+    <path d="M -2,-1 L 2,-1 M 0,-3 L 0,1" stroke="#14b8a6" stroke-width="1.5"/>
+    
+    <!-- Animal health symbol -->
+    <circle cx="15" cy="8" r="3" fill="none" stroke="#0d9488" stroke-width="1.5"/>
+    <path d="M 12,8 Q 15,5 18,8" fill="none" stroke="#0d9488" stroke-width="1"/>
+    
+    <!-- Environmental symbol -->
+    <circle cx="-10" cy="12" r="3.5" fill="none" stroke="#14b8a6" stroke-width="1.5"/>
+    <path d="M -12,9 Q -10,7 -8,9 Q -10,11 -12,9" fill="#14b8a6" opacity="0.3"/>
+    
+    <!-- Connecting lines showing interconnection -->
+    <line x1="0" y1="0" x2="15" y2="8" stroke="#0d9488" stroke-width="0.8" opacity="0.6"/>
+    <line x1="0" y1="0" x2="-10" y2="12" stroke="#0d9488" stroke-width="0.8" opacity="0.6"/>
+    <line x1="15" y1="8" x2="-10" y2="12" stroke="#0d9488" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  
+  <!-- Additional molecular pattern for depth -->
+  <g transform="translate(470, 95)" opacity="0.25">
+    <circle cx="0" cy="0" r="2" fill="#0d9488"/>
+    <circle cx="8" cy="-4" r="1.5" fill="#14b8a6"/>
+    <circle cx="-6" cy="5" r="1.5" fill="#14b8a6"/>
+    <circle cx="4" cy="6" r="1" fill="#0d9488"/>
+    <line x1="0" y1="0" x2="8" y2="-4" stroke="#0d9488" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="-6" y2="5" stroke="#0d9488" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="4" y2="6" stroke="#0d9488" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Subtle data visualization elements -->
+  <g transform="translate(380, 100)" opacity="0.3">
+    <rect x="0" y="0" width="2" height="8" fill="#14b8a6"/>
+    <rect x="4" y="-2" width="2" height="10" fill="#14b8a6"/>
+    <rect x="8" y="2" width="2" height="6" fill="#14b8a6"/>
+    <rect x="12" y="-1" width="2" height="9" fill="#14b8a6"/>
+  </g>
+</svg>

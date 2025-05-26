@@ -1,24 +1,69 @@
-# Astro Starter Kit: Basics
+# Sentinel AMR Surveillance Platform
 
-```sh
-npm create astro@latest -- --template basics
-```
+A comprehensive antimicrobial resistance (AMR) surveillance platform built with Astro.js that standardizes and analyzes WHONET data for global health initiatives.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Overview
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The Sentinel platform provides a unified approach to AMR surveillance across human, animal, and environmental health sectors, following the One-Health paradigm.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Features
 
-## 🚀 Project Structure
+- **Comprehensive Surveillance:** Unified approach across human, animal, and environmental health
+- **Standardized Data:** Built on WHONET standards with enhanced validation and classification
+- **WHO AWARE Integration:** Classification of antimicrobials according to WHO AWARE categories
+- **Advanced Analytics:** Tools for detecting emerging resistance patterns
 
-Inside of your Astro project, you'll see the following folders and files:
+## Data Resources
+
+- Organisms database with 2,946 standardized entries
+- Comprehensive antimicrobials catalog with ATC codes
+- WHO AWARE antimicrobial classifications
+- Jupyter notebooks for data extraction and processing
+
+## Technology
+
+Built with:
+- [Astro.js](https://astro.build) - The modern web framework
+- [Tailwind CSS](https://tailwindcss.com) - For styling with a teal color theme
+- [Jupyter](https://jupyter.org) - Data science notebooks for extraction and analysis
+
+## Project Structure
 
 ```text
 /
 ├── public/
+├── project_resources/ - Data files and notebooks
+│   ├── Organisms.txt - Raw WHONET organism data
+│   ├── WHO_EML.xlsx - WHO Essential Medicines List
+│   ├── Antimicrobials.xlsx - Antimicrobial agents data
+│   └── Notebooks/ - Jupyter notebooks for data processing
+├── src/
+│   ├── assets/ - Images and SVG files
+│   ├── components/ - Astro components
+│   ├── layouts/ - Page layouts
+│   ├── pages/ - Site pages
+│   └── styles/ - Tailwind and global styles
+```
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Data Processing
+
+The project includes several Jupyter notebooks for processing WHONET data:
+- `Organisms_Extraction_Notebook_Fixed.ipynb` - Extract organism codes and metadata
+- `ATC_CODE_EXTRACTION_NOTEBOOK.ipynb` - Extract antimicrobial ATC codes
+- `WHO_AWARE_nANTIBIOTIC_CLASS_Extraction.ipynb` - Process WHO AWARE classifications
 │   └── favicon.svg
 ├── src/
 │   ├── layouts/
